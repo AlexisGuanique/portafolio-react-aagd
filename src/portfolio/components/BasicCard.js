@@ -17,7 +17,7 @@ export const BasicCard = ({
         <Card
             className='animate__animated animate__fadeInBottomRight'
             style={{
-                backgroundColor: 'rgba(135, 206, 235, 0.5)',
+                backgroundColor: 'rgba(119, 136, 153, 0.1)',
                 marginLeft: 0,
                 margin: 30,
                 padding: '10px',
@@ -40,7 +40,7 @@ export const BasicCard = ({
                     Descripcion del proyecto
                 </Typography> */}
 
-                <Link style={{ color: '#1E90FF', textDecoration: 'none', fontSize: '20px' }} to={'/project/123'}>Mas detalles...</Link>
+                <Link style={{ color: '#1E90FF', textDecoration: 'none', fontSize: '20px' }} to={`/projetc/${id}`}>Mas detalles...</Link>
 
             </CardContent>
         </Card>

@@ -11,10 +11,6 @@ export const HomePage = () => {
         <h3>En esta pagina se debe mostrar informacion acerca de mi</h3>
       </Grid>
 
-
-
-
-
     </PortfolioLayout>
   )
 }

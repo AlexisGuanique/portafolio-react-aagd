@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material"
-import { BasicCard } from "../components/BasicCard"
 import { ProjetcList } from "../components/ProjetcList"
 import { PortfolioLayout } from "../layout/PortfolioLayout"
 
@@ -16,7 +15,6 @@ export const FrontendPage = () => {
       </Grid>
 
 
-      {/* Prueba */}
       <Grid
         container
 

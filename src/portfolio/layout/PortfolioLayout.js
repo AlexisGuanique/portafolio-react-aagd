@@ -18,7 +18,9 @@ export const PortfolioLayout = ({ children }) => {
             sx={{ flexGrow: 1, p: 1 }}
             className='animate__animated animate__fadeIn'
         >
-            <Toolbar />
+            <Toolbar 
+              style={{ marginTop: '30px'}}
+            />
 
             { children }
 

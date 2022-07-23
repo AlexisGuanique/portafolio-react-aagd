@@ -13,7 +13,7 @@ export const ProjetcList = ({ lenguaje }) => {
             container
         >
             {
-                // Mapeamos la lista de heroes para poder recorres elemento por elemento
+                
                 projetcs.map( projetc =>
                     <BasicCard 
                         key={ projetc.id }

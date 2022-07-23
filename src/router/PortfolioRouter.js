@@ -16,7 +16,7 @@ export const PortfolioRouter = () => {
 
                 {/* Ruta de los proyectos de manera individual */}
 
-                <Route path="project/:ProjectId" element={<ProjetcPage />} />
+                <Route path="projetc/:projetcId" element={<ProjetcPage />} />
 
 
                 {/* Comodin para que navegue a alguna pagina por defecto */}
