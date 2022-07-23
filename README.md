@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Portafolio Frontend React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A continuacion podran apreciar un portafolio hecho 100% con Javascript y su libreria React.
 
-In the project directory, you can run:
+El mismo tiene como objetivo dar mostrar parte de mi trabajo, tanto en aplicaciones en el Backend las cuales he contruido con Python y su framework Flask y las de Frontend las cuales han sido construidas con Javascript y su libreria React.
 
-### `npm start`
+# Para los desarroladores
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para poder correr en su pc esta aplicacion debes tener instaladas las siguientes dependencias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React:
 
-### `npm test`
+    Deben ejecutar el siguiente comando en su terminal: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        ```
+            npx create-react-app my-app
 
-### `npm run build`
+        ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React Roter Dom versión 6:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+        ```
+            npm install react-router-dom@6
 
-### `npm run eject`
+            o
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+            yarn add react-router-dom@6
+        
+        ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Les dejo el link de la documentacion oficial, por si le quieren dar un vistazo a React Router Dom: https://reactrouter.com/docs/en/v6/getting-started/installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Bootstrap:
 
-## Learn More
+    Debes colocar en dentro de la etiqueta head de tu index.html la siguiente etiqueta:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        ```
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        
+        ```   
 
-### Code Splitting
+    O ingresar al link  https://getbootstrap.com/ y realizar la instalacion correspondiente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+* Mui Material:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Debes realiozar la instalacion mediante el siguiente comando en la terminal:
 
-### Making a Progressive Web App
+        ```
+            npm install @mui/material @emotion/react @emotion/styled
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+            npm install @mui/icons-material
 
-### Advanced Configuration
+        ```
+    O ingresar al link https://mui.com/ y realizar la instalacion correspondiente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+* Animate Style:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+        ```
+            npm install animate.css --save
 
-### `npm run build` fails to minify
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     Debes colocar en dentro de la etiqueta head de tu index.html la siguiente etiqueta:
+
+        ```
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        
+        ```  
+
+
+Una vez instaldas todas las dependencias deben ejecutar ewl siguiente comando en la terminal que esten utilizando:
+
+        ```
+            npm start
+
+        ```
+Una vez hecho esto su aplicacion comenzara a correr en el puerto http://localhost:3000
+
+
+
+
+Sin mas que agregar me despido, muchas gracias por apreciar mi trabajo y Happy hacking! para todos. :sunglasses:
+
+
