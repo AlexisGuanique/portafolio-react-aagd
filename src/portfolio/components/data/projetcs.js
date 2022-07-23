@@ -58,5 +58,13 @@ export const projets = [
         'staff': ['Python', 'Flask', 'HTML', 'CSS', 'MySql', 'SQL'],
         'link': 'https://salty-oasis-13650.herokuapp.com/auth/login',
     },
+    {
+        'id': 'python-backendchallenge',
+        'lenguaje': 'python',
+        'name': 'Backend Challenge',
+        'description': 'Aqui va la descripcion del proyecto',
+        'staff': ['Python', 'MongoDB', 'UnitTest'],
+        'link': 'https://github.com/AlexisGuanique/Challenge-Backend-y-Unit-Test',
+    },
 
 ]
