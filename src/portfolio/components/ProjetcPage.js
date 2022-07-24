@@ -1,28 +1,22 @@
 import { Grid } from "@mui/material";
-import { Navigate, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { getProjetcById } from "../helpers/getProjetcById";
 
 
 export const ProjetcPage = () => {
 
-    console.log('hola mundo')
     const { projetcId } = useParams();
     const navigate = useNavigate();
 
-    const projetc = getProjetcById(projetcId);
+    const projetc = getProjetcById( projetcId );
 
-    const { staff } = projetc;
+    // Desestructuracion en alta, DTB mi muchacho <3
+    const { name, description, staff } = projetc;
 
-    console.log(staff);
+    // Para navegar una pagina antes
     const onNavigateBack = () => {
         navigate(-1);
     };
-
-
-    if (!projetc) {
-        return <Navigate to='home' />;
-    }
-
 
     return (
         <Grid
@@ -35,8 +29,8 @@ export const ProjetcPage = () => {
                 style={{ display: 'flex', flexDirection: 'column' }}
             >
                 <Grid>
-                    <h3>{projetc.name}</h3>
-                    <h4>{projetc.description}</h4>
+                    <h3>{ name }</h3>
+                    <h4>{ description }</h4>
                     <h4>Tecnologias utilizadas: </h4>
 
                     <ul>
@@ -51,7 +45,7 @@ export const ProjetcPage = () => {
                 </Grid>
                 <Grid>
                     <button
-                        onClick={onNavigateBack}
+                        onClick={ onNavigateBack }
                     >
                         Regresar
                     </button>

@@ -1,32 +1,33 @@
-import { Toolbar } from '@mui/material'
-import { Box } from "@mui/system"
+import { Grid, Toolbar } from '@mui/material'
 import { NavBar } from "../components/NavBar";
 
 
 
 export const PortfolioLayout = ({ children }) => {
   return (
-    <Box 
+    <Grid 
       sx={{ display: 'flex'}}
     >
 
         <NavBar />
 
 
-        <Box
+        <Grid
             component='main'
-            sx={{ flexGrow: 1, p: 1 }}
             className='animate__animated animate__fadeIn'
+            sx={{ width: '100%', height: '80%', display: 'flex', flexDirection: 'column', position: 'relative' }}
         >
             <Toolbar 
-              style={{ marginTop: '30px'}}
+              style={{ marginTop: '10px'}}
             />
 
             { children }
 
-        </Box>
+            
+
+        </Grid>
 
 
-    </Box>
+    </Grid>
   )
 }
