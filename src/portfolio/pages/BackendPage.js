@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material"
+import { Box, Grid, List, ListItem, Toolbar, Typography } from "@mui/material"
 import { ProjetcList } from "../components/ProjetcList"
 import { PortfolioLayout } from "../layout/PortfolioLayout"
 
@@ -6,20 +6,62 @@ import { PortfolioLayout } from "../layout/PortfolioLayout"
 export const BackendPage = () => {
   return (
     <PortfolioLayout>
-      <Grid style={{ marginLeft: 25, minWidth: 250 }}>
-        <h1>Backend Projects Pages</h1>
-        <h3>En esta pagina se debe mostrar informacion acerca de mis proyectos backend</h3>
-      </Grid>
+      <Toolbar />
 
-
-      <Grid
-        container
-
+      <Box sx={{
+        width: '100%',
+        height: '80%',
+      }}
       >
-        <ProjetcList lenguaje ={'python'} />
+        <Box
+          component='div'
+          sx={{ marginLeft: '30px' }}
+        >
+          <Typography variant='h1' component='h1' sx={{ fontSize: '40px' }}>Proyectos realizados con Python</Typography>
+
+          <Typography component='p' sx={{ fontSize: '20px', paddingTop: '20px' }}>
+            Estas son algunas de las tecnologias utilizadas en las aplicaciones incluidas en la siguiente lista:
+          </Typography>
+
+          <Box
+          >
+            <List sx={{ display: 'flex', flexDirection: 'column' }}>
+              <ListItem>Python</ListItem>
+              <ListItem>Flask</ListItem>
+              <ListItem>Tkinter</ListItem>
+
+              <ListItem>MySQL</ListItem>
+              <ListItem>SQL</ListItem>
+              <ListItem>Mongo</ListItem>
+
+              <ListItem>HTML</ListItem>
+              <ListItem>CSS</ListItem>
+
+            </List>
+          </Box>
+
+          <Typography component='p' sx={{ fontSize: '20px', paddingTop: '20px' }}>
+            A continuación se muestra una lista de los proyectos, en los cuales se puede apreciar la información de cada uno de ellos:
+          </Typography>
+
+        </Box>
+
+        <Box>
 
 
-      </Grid>
+          <ProjetcList lenguaje={'python'} />
+
+
+
+        </Box>
+
+
+      </Box>
+
+
+
+
+
 
     </PortfolioLayout>
   )

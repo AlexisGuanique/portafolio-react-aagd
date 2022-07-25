@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material';
+import { Box} from '@mui/material';
 import { getProjetcByLenguaje } from '../helpers/getProjetcByLenguaje';
 import { BasicCard } from './BasicCard';
 
@@ -6,11 +6,12 @@ export const ProjetcList = ({ lenguaje }) => {
 
     const projetcs = getProjetcByLenguaje( lenguaje );
 
-    console.log( projetcs );
+    // console.log( projetcs );
 
     return (
-        <Grid
-            container
+        <Box
+            
+            sx={{ display: 'flex'}}
         >
             {
                 
@@ -22,6 +23,6 @@ export const ProjetcList = ({ lenguaje }) => {
                 )
             }
 
-        </Grid>
+        </Box>
     )
 }
