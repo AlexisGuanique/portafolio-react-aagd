@@ -9,7 +9,7 @@ export const BasicCard = ({
     lenguaje,
     name,
     description,
-    staff,
+    stack,
     link,
 }) => {
 
@@ -35,17 +35,18 @@ export const BasicCard = ({
                 }} 
             >
 
-                <Typography variant="h4" component="div" sx={{ marginBottom: '30px' }}>
-                    {name}
+                <Typography variant="h4" component="h4" sx={{ marginBottom: '30px' }}>
+                    Aplicación:
                 </Typography>
 
-                <Typography variant="h6" component="div" sx={{ marginBottom: '10px' }}>
-                    {description}
+                <Typography variant="h5" component="h5" sx={{ marginBottom: '20px' }}>
+                    {name}
                 </Typography>
 
                 {
                     (lenguaje === 'javascript')
                     ? <Link style={{ color: '#FFD700', textDecoration: 'none', fontSize: '20px' }} to={`/projetc/${id}`}>Mas detalles...</Link>
+                    
                     // Que muestre los links con el color de python
                     : <Link style={{ color: '#1E90FF', textDecoration: 'none', fontSize: '20px' }} to={`/projetc/${id}`}>Mas detalles...</Link>
                     

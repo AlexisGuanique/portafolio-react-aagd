@@ -1,5 +1,5 @@
 import { Box, Toolbar, Typography } from "@mui/material"
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { PortfolioLayout } from "../layout/PortfolioLayout"
 
 
@@ -274,7 +274,7 @@ export const HomePage = () => {
           </Typography>
 
           <Typography sx={{ fontSize: '20px', paddingTop: '20px' }}>
-            No estas convencido aún? mira lo que he construído con esas tecnologias haciendo click
+            No estas convencido aún? mira lo que he construído con esas otras tecnologias haciendo click
             <NavLink style={{ color: '#1E90FF', marginRight: 20, padding: '10px', textDecoration: 'none', fontSize: '20px' }} to='/backend'>AQUI</NavLink>
           </Typography>
 

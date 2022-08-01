@@ -1,6 +1,7 @@
-import { Grid } from "@mui/material";
+import { Box, List, ListItem, Stack, Typography } from "@mui/material";
 import { useNavigate, useParams } from "react-router-dom"
 import { getProjetcById } from "../helpers/getProjetcById";
+import { PortfolioLayout } from "../layout/PortfolioLayout";
 
 
 export const ProjetcPage = () => {
@@ -8,10 +9,10 @@ export const ProjetcPage = () => {
     const { projetcId } = useParams();
     const navigate = useNavigate();
 
-    const projetc = getProjetcById( projetcId );
+    const projetc = getProjetcById(projetcId);
 
     // Desestructuracion en alta, DTB mi muchacho <3
-    const { name, description, staff } = projetc;
+    const { name, description, stack } = projetc;
 
     // Para navegar una pagina antes
     const onNavigateBack = () => {
@@ -19,40 +20,63 @@ export const ProjetcPage = () => {
     };
 
     return (
-        <Grid
-            style={{ marginLeft: 50, marginTop: 30 }}
-            className='animate__animated animate__fadeInBottomRight'
-        >
-
-            <Grid
-                container
-                style={{ display: 'flex', flexDirection: 'column' }}
+        <PortfolioLayout>
+            <Box
+                sx={{ width: '1300px', height: '100%', margin: '50px', display: 'flex' }}
+                className='animate__animated animate__fadeInBottomRight'
             >
-                <Grid>
-                    <h3>{ name }</h3>
-                    <h4>{ description }</h4>
-                    <h4>Tecnologias utilizadas: </h4>
 
-                    <ul>
-                        {
-                            staff.map(skill => {
-                                return <li key={skill}>{skill}</li>
-                            })
-                        }
-                    </ul>
-
-
-                </Grid>
-                <Grid>
-                    <button
-                        onClick={ onNavigateBack }
+                <Box
+                    sx={{ display: 'flex', flexDirection: 'column' }}
+                >
+                    <Box
+                        sx={{}}
                     >
-                        Regresar
-                    </button>
-                </Grid>
+
+                        <Typography component='h1' sx={{ fontSize: '50px' }}>{name}</Typography>
+                        <Typography component='p' sx={{ fontSize: '20px', paddingTop: '20px' }}>{description}</Typography>
 
 
-            </Grid>
-        </Grid>
+                    </Box>
+
+                    <Box
+                        sx={{}}
+                    >
+                        <Typography component='h4' sx={{ fontSize: '20px', paddingTop: '20px' }}>Tecnologias utilizadas:</Typography>
+
+                        <List
+                            sx={{}}
+
+                        >
+                            {
+                                stack.map(skill => {
+                                    return <ListItem
+                                        key={skill}
+                                        sx={{}}
+
+                                    >
+                                        {skill}
+                                    </ListItem>
+                                })
+                            }
+                        </List>
+                    </Box>
+
+                    <Box
+                        sx={{}}
+
+                    >
+                        <button
+                            onClick={onNavigateBack}
+                        >
+                            Regresar
+                        </button>
+                    </Box>
+
+
+                </Box>
+            </Box>
+        </PortfolioLayout>
+
     )
 }
