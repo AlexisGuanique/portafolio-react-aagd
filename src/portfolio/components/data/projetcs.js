@@ -27,8 +27,8 @@ export const projets = [
         'id': 'js-calendar',
         'lenguaje': 'javascript',
         'name': 'Calendar App',
-        'description': 'Aqui va la descripcion del proyecto',
-        'stack': ['Javascript', 'React', 'Node.js', 'Express', 'MongoDB'],
+        'description': 'Dicha aplicación consiste de un calendario interactivo construido 100% con el lenguaje Javascript y la libreria React en la parte del frontend utilizando, Redux como herramienta para el manejo de estados globales de la aplicación. En la aplicacion contamos con un modulo de autenticacion, el cual le permite realizar login y crear usuarios, dicho calendario interactivo cuenta con la implementacion la librería React-Big-Calendar además de contar con un modal que permite mediante formularios crear eventos. Cabe destacar que el backend de dicha aplicación fué realizado tambien con el lenguaje Javascript y con Node.js y Express.js, las bases de datos fueron creadas con MongoDB.',
+        'stack': ['Javascript', 'React', 'Node.js', 'Express.js', 'MongoDB', 'Redux'],
         'link': 'https://alexisguanique.github.io/React-Gif-Galery-App/',
     },
 
